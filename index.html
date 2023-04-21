@@ -39,6 +39,11 @@
           </li>
         </ul>
       </address>
+      <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+        <svg class="menu-toggle-icon" width="32" height="22">
+          <use href="./images/icon.svg#menu-burger"></use>
+        </svg>
+      </button>
 
     </div>
   </header>
@@ -141,11 +146,11 @@
 
     <!--======================== OUR TEAM ======================== -->
 
-    <section class="team section">
+    <!-- <section class="team section">
       <div class="container">
-        <h2 class="main-title">Our Team</h2>
-        <!-- ========================================= -->
-        <ul class="team-list">
+        <h2 class="main-title">Our Team</h2> -->
+    <!-- ========================================= -->
+    <!-- <ul class="team-list">
           <li class="team-list__item">
             <img src="./images/img4.jpg" alt="Product Designer" width="264" />
             <div class="team-list__item person">
@@ -187,9 +192,9 @@
               </ul>
 
             </div>
-          </li>
-          <!-- ==================================================== -->
-          <li class="team-list__item">
+          </li> -->
+    <!-- ==================================================== -->
+    <!-- <li class="team-list__item">
             <img src="./images/img7.jpg" alt="Frontend Developer" width="264" />
             <div class="team-list__item person">
               <h3 class="team-list__title title">Tom Ford</h3>
@@ -229,9 +234,9 @@
                 </li>
               </ul>
             </div>
-          </li>
-          <!-- ================================================ -->
-          <li class="team-list__item">
+          </li> -->
+    <!-- ================================================ -->
+    <!-- <li class="team-list__item">
             <img src="./images/img5.jpg" alt="Marketing" width="264" />
             <div class="team-list__item person">
               <h3 class="team-list__title title">Camila Garcia</h3>
@@ -271,9 +276,9 @@
                 </li>
               </ul>
             </div>
-          </li>
-          <!-- ============================================= -->
-          <li class="team-list__item">
+          </li> -->
+    <!-- ============================================= -->
+    <!-- <li class="team-list__item">
             <img src="./images/img6.jpg" alt="UI Designer" width="264" />
             <div class="team-list__item person">
               <h3 class="team-list__title title">Daniel Wilson</h3>
@@ -316,7 +321,7 @@
           </li>
         </ul>
       </div>
-    </section>
+    </section> -->
 
 
     <!-- =======================CUSTOMERS======================== -->
@@ -363,7 +368,7 @@
               </svg>
             </a>
           </li>
-          <!-- -------------------------------- -->
+
           <li class="customers-item">
             <a class="customers-link" href="" target="_blank" rel="noopener noreferer" aria-label="link to company">
               <svg class="customers-icon" width="104" height="56">
@@ -378,7 +383,7 @@
 
   <!-- ================FOOTER=================== -->
 
-  <footer class="footer">
+  <footer class="footer mobile">
     <div class="footer-wrapper container">
       <div class="footer-logo-wrapper">
         <a class="footer-logo " href="./index.html">WEB<span class="footer-logo decor">STUDIO</span></a>
@@ -429,25 +434,21 @@
 
 
       <!-- ==============MODAL SUBSCRIBE============ -->
-
-      <form class="sub-form">
+      <div class="wrappers-sub">
         <p class="sub-title social-title">Subscribe</p>
-        <div class="wrappers-sub">
-          <label class="sub-label">
-            <input class="sub-email" type="email" name="email" placeholder="E-mail">
-          </label>
-          <label class="sub-label">
-            <button class="sub-btn" type="submit">Subscribe</button>
+        <form class="sub-form">
+          <input class="sub-email" type="email" name="email" placeholder="E-mail">
+          <button class="sub-btn" type="submit">Subscribe
             <svg class="sub-icon" width="24" height="24">
               <use href="./images/icon.svg#sub-icon"></use>
             </svg>
-          </label>
-        </div>
-      </form>
+          </button>
+        </form>
+      </div>
   </footer>
 
   <!-- ==============MODAL WINDOW============ -->
-  <div class="backdrop is-hidden" data-modal>
+  <!-- <div class="backdrop is-hidden" data-modal>
     <div class="modal">
       <button class="modal-btn" type="button" data-modal-close>
         <svg class="modal-icon" width="8" height="8">
@@ -488,8 +489,7 @@
         <div class="modal-form-field">
           <label class="modal-form-label">
             <span class="modal-name">Comment</span>
-            <textarea class="modal-form-message" name="comment" placeholder="Leave your comment...">
-            </textarea>
+            <textarea class="modal-form-message" name="comment" placeholder="Leave your comment"></textarea>
           </label>
         </div>
 
@@ -507,9 +507,75 @@
         <button class="modal-form-btn button hero-button" type="submit">Send</button>
       </form>
     </div>
-  </div>
+  </div> -->
 
+  <!-- mobile menu -->
+  <!-- <div class="menu-container js-menu-container">
+    <button class="menu-toggle js-close-menu">
+      <svg class="modal-icon-mobile" width="8" height="8">
+        <use href="./images/icon.svg#close">
+      </svg>
+    </button>
 
+    <ul class="mobile-menu">
+      <li class="mobile-menu-item">
+        <a class="mobile-menu-link current-accent " href="./index.html">Studio</a>
+      </li>
+      <li class="mobile-menu-item">
+        <a class="mobile-menu-link" href="./portfolio.html">Portfolio</a>
+      </li>
+      <li class="mobile-menu-item">
+        <a class="mobile-menu-link" href="">Contacts</a>
+      </li>
+    </ul>
+
+    <ul class="mobile-contacts">
+      <li class="mobile-contacts-item">
+        <a class="mobile-contact-link" href="mailto:info@devstudio.com">+11 (000) 111-11-11</a>
+      </li>
+      <li class="mobile-contacts-item">
+        <a class="mobile-contact-mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+      </li>
+    </ul>
+    <ul class="social-list-mobile">
+      <li class="social-item">
+        <a class="social-link how-green" href="" target="_blank" rel="noopener noreferer"
+          aria-label="link to instagram">
+          <svg class="social-icon" width="24" height="24">
+            <use href="./images/icon.svg#instagram"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="social-item">
+        <a class="social-link how-green" href="" target="_blank" rel="noopener noreferer" aria-label="link to twitter">
+          <svg class="social-icon" width="24" height="24">
+            <use href="./images/icon.svg#twitter"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="social-item">
+        <a class="social-link how-green" href="" target="_blank" rel="noopener noreferer" aria-label="link to facebook">
+          <svg class="social-icon" width="24" height="24">
+            <use href="./images/icon.svg#facebook"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="social-item">
+        <a class="social-link how-green" href="" target="_blank" rel="noopener noreferer" aria-label="link to linkedin">
+          <svg class="social-icon" width="24" height="24">
+            <use href="./images/icon.svg#linkedin"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+
+  </div> -->
+
+  <!-- mobile menu -->
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"></script>
+  <script defer src="./js/mobile-menu.js"></script>
   <script src="./js/modal.js"></script>
 </body>
 
