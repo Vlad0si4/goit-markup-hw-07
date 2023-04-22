@@ -563,7 +563,6 @@ transform: translateY(0%);
            }
          }
 }
-
 @media only screen and (min-width: 1200px) {
   .hero {
       padding: 188px 54px;
