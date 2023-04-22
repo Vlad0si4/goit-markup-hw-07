@@ -116,7 +116,8 @@
               </svg>
             </div>
             <h3 class="advantage-title title">Technologies</h3>
-            <p class="advantage-text">Design practice focused on digital experiences. We bring forth a deep passion for
+            <p class="advantage-text-bot">Design practice focused on digital experiences. We bring forth a deep passion
+              for
               problem-solving.</p>
           </li>
         </ul>
@@ -132,13 +133,16 @@
         <h2 class="main-title">What are we doing</h2>
         <ul class="works-list">
           <li class="works-list__item">
-            <img src="./images/img1.jpg" alt="computer mac" width="360">
+            <img srcset="./images/works/1_desk@1x.jpg 1x, images/works/2_desk@2x.jp/"
+              src="./images/works/img 1_desk@1x.jpg" alt="computer mac" width="360">
           </li>
           <li class="works-list__item">
-            <img src=" ./images/img2.jpg" alt="iphone" width="360">
+            <img srcset="./images/works/2_desk@1x.jpg 1x, images/works/2_desk@2x.jp/"
+              src=" ./images/works/img 2_desk@1x.jpg" alt="iphone" width="360">
           </li>
           <li class="works-list__item">
-            <img src=" ./images/img3.jpg" alt="iphone and mac book" width="360">
+            <img srcset="./images/works/3_desk@1x.jpg 1x, images/works/3_desk@2x.jp/"
+              src=" ./images/works/img 3_desk@1x.jpg" alt="iphone and mac book" width="360">
           </li>
         </ul>
       </div>
@@ -146,13 +150,14 @@
 
     <!--======================== OUR TEAM ======================== -->
 
-    <!-- <section class="team section">
+    <section class="team section">
       <div class="container">
-        <h2 class="main-title">Our Team</h2> -->
-    <!-- ========================================= -->
-    <!-- <ul class="team-list">
+        <h2 class="main-title">Our Team</h2>
+        <!-- ========================================= -->
+        <ul class="team-list">
           <li class="team-list__item">
-            <img src="./images/img4.jpg" alt="Product Designer" width="264" />
+            <img srcset="./images/team/img_desk@1x-3.jpg 1x, ./images/team/img_desk@2x-3.jpg 2x"
+              src="./images/team/img_desk@1x-3.jpg" alt="Product Designer" width="264" />
             <div class="team-list__item person">
               <h3 class="team-list__title title">Mark Guerrero</h3>
               <p class="team-list__text">Product Designer</p>
@@ -192,10 +197,11 @@
               </ul>
 
             </div>
-          </li> -->
-    <!-- ==================================================== -->
-    <!-- <li class="team-list__item">
-            <img src="./images/img7.jpg" alt="Frontend Developer" width="264" />
+          </li>
+
+          <li class="team-list__item">
+            <img srcset="./images/team/img_desk@1x-2.jpg 1x, ./images/team/img_desk@2x-2.jpg 2x"
+              src="./images/team/img_desk@1x-2.jpg" alt="Frontend Developer" width="264" />
             <div class="team-list__item person">
               <h3 class="team-list__title title">Tom Ford</h3>
               <p class="team-list__text">Frontend Developer</p>
@@ -234,10 +240,11 @@
                 </li>
               </ul>
             </div>
-          </li> -->
-    <!-- ================================================ -->
-    <!-- <li class="team-list__item">
-            <img src="./images/img5.jpg" alt="Marketing" width="264" />
+          </li>
+          <!-- ================================================ -->
+          <li class="team-list__item">
+            <img srcset="./images/team/img_desk@1x-1.jpg 1x, ./images/team/img_desk@2x-1.jpg 2x"
+              src="./images/team/img_desk@1x-1.jpg" alt="Marketing" width="264" />
             <div class="team-list__item person">
               <h3 class="team-list__title title">Camila Garcia</h3>
               <p class="team-list__text">Marketing</p>
@@ -276,10 +283,11 @@
                 </li>
               </ul>
             </div>
-          </li> -->
-    <!-- ============================================= -->
-    <!-- <li class="team-list__item">
-            <img src="./images/img6.jpg" alt="UI Designer" width="264" />
+          </li>
+          <!-- ============================================= -->
+          <li class="team-list__item">
+            <img srcset="./images/team/img_desk@1x.jpg, ./images/team/img_desk@2x.jpg 2x"
+              src=".//images/team/img_desk@1x.jpg" alt="UI Designer" width="264" />
             <div class="team-list__item person">
               <h3 class="team-list__title title">Daniel Wilson</h3>
               <p class="team-list__text">UI Designer</p>
@@ -321,7 +329,7 @@
           </li>
         </ul>
       </div>
-    </section> -->
+    </section>
 
 
     <!-- =======================CUSTOMERS======================== -->
@@ -448,7 +456,8 @@
   </footer>
 
   <!-- ==============MODAL WINDOW============ -->
-  <!-- <div class="backdrop is-hidden" data-modal>
+
+  <div class="backdrop is-hidden" data-modal>
     <div class="modal">
       <button class="modal-btn" type="button" data-modal-close>
         <svg class="modal-icon" width="8" height="8">
@@ -507,10 +516,11 @@
         <button class="modal-form-btn button hero-button" type="submit">Send</button>
       </form>
     </div>
-  </div> -->
+  </div>
 
   <!-- mobile menu -->
-  <!-- <div class="menu-container js-menu-container">
+
+  <div class="menu-container js-menu-container">
     <button class="menu-toggle js-close-menu">
       <svg class="modal-icon-mobile" width="8" height="8">
         <use href="./images/icon.svg#close">
@@ -568,8 +578,7 @@
         </a>
       </li>
     </ul>
-
-  </div> -->
+  </div>
 
   <!-- mobile menu -->
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
