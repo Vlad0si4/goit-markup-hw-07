@@ -75,7 +75,7 @@ body {
   max-width: 480px;
   padding: 0 16px;
   margin: 0 auto;
-  /* outline: 1px solid red;  */
+  outline: 1px solid red; 
 }
 
 @media only screen and (min-width: 768px) {
@@ -551,7 +551,7 @@ transform: translateY(0%);
 
 @media only screen and (min-width: 769px) {
   .hero {
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7))
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
       url(../images/officedesk@1x.jpg);
   }
          @media (min-device-pixel-ratio: 2),
